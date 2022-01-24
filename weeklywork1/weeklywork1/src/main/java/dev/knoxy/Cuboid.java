@@ -6,7 +6,7 @@ public class Cuboid {
     //zSide shares length with yside length and width with xside length
     //ySide shares length with zside and width with xside width 
     //height is xSide width, width is xside length, length is yside length
-    
+    //TODO: make sure that this works and needs no debugging
     private Rectangle zSide;
     private Rectangle ySide;
     private Rectangle xSide;
