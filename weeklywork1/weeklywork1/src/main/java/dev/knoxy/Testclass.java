@@ -1,3 +1,4 @@
+package dev.knoxy;
 
 public class Testclass {
 

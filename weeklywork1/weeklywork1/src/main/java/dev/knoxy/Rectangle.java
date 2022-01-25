@@ -1,3 +1,4 @@
+package dev.knoxy;
 
 public class Rectangle {
 	
@@ -14,7 +15,11 @@ public class Rectangle {
 	}
 	
 	public Rectangle() {
-		this(1, 2);
+		width = 1;
+		length = 1;
+		area = width * length;
+		perimeter = (width * 2) + (2* length);
+		
 	}
 	
 	public double getArea() {

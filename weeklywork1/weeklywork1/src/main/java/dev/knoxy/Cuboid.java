@@ -1,6 +1,8 @@
 package dev.knoxy;
 
-//java.math.*;
+/*I decided to use rectangles as faces because it has potential to be more future proof
+if we were creating a true 3d environment a face would be made of edges, edges would be made from points which would have 3 coordinates.
+this implementation would allow for esier refactoring if it is ever needed */
 
 public class Cuboid {
     //zSide shares length with yside length and width with xside length
@@ -13,6 +15,12 @@ public class Cuboid {
     private double volume;
     private double surfaceArea;
     public Cuboid(){
+        double  width, length, height;
+        width = length = height = 1;
+
+        this.zSide = new Rectangle(width,length);
+        this.ySide = new Rectangle(height,length);
+        this.xSide = new Rectangle(height,width);
         
         this.surfaceArea = (zSide.getArea()*2)
          + (this.ySide.getArea()*2)
@@ -57,6 +65,9 @@ public class Cuboid {
     }
     public void setSurfaceArea(double sa){
         this.surfaceArea = sa;
+    }
+    public double getPerimeter(){
+        return getLength()*4+getHeight()*4+getWidth()*4;
     }
 
     
