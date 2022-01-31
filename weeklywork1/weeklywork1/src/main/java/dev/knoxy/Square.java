@@ -1,6 +1,6 @@
 package dev.knoxy;
 
-//TODO: finish getters and setters.
+
 public class Square extends Rectangle{
     private double side;
 
